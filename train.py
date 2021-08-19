@@ -153,7 +153,7 @@ def main():
     @tf.function
     def train_step_KL(x, eps):
         """
-        KL with likeloihood expanded out of the KL.
+        KL with likelihood expanded out of the KL.
         
         """
         with tf.GradientTape() as tape:
@@ -197,6 +197,7 @@ def main():
     @tf.function
     def train_step_KL_full(x, eps):
         """
+        KL with likelihood included in the KL
         
         """
         with tf.GradientTape() as tape:
